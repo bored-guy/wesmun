@@ -4,35 +4,8 @@
     <meta charset="utf-8">
     <link rel="icon" href="/static/favicon.png">
     <link rel="apple-touch-icon" href="/static/favicon.png">
-    <title>Hi汇文</title>
-    <script>;(function () {
-        // detect browser version, redirect if found an unhealthy version
-        if (window.navigator) {
-            var ua = String(window.navigator.userAgent)
-            var chrome = /(?:Chrome|CriOS)\/(\d+)\./.exec(ua)
-            var safari = /Safari/.exec(ua) ? /Version\/(\d+)\./.exec(ua) : null
-            var firefox = /Firefox\/(\d+)\./.exec(ua)
-            var edge = /Edge\/(\d+)\./.exec(ua)
-            var appleWebkit = /AppleWebKit\/(\d+)\./.exec(ua)
+    <title>Hi WESMUN</title>
 
-            function isAcceptable() {
-                return (
-                    (chrome && Number(chrome[1]) >= 56)
-                    || (safari && Number(safari[1]) >= 10)
-                    || (firefox && Number(firefox[1]) >= 50)
-                    || (edge && Number(edge[1]) >= 13)
-                    || (appleWebkit && Number(appleWebkit[1]) >= 602)
-                )
-            }
-
-            if (!isAcceptable()) {
-                window.location.href = "/static/browser-warning.html"
-            }
-        } else {
-            // must be really ancient one
-            document.write('<div><h1>请使用最新版Chrome访问</h1><a href="https://www.google.cn/chrome/">下载链接1</a> <a href="http://rj.baidu.com/soft/detail/25718.html">下载链接2</a></div>')
-        }
-    })();</script>
     <link href="/static/css/app.b840a141264236e846d5f4d66751a3d1.css" rel="stylesheet">
     <style type="text/css">/*for=vue-advanced-cropper*/
     .vue-advanced-cropper {
@@ -902,20 +875,19 @@
 <body class="" style="">
 <div id="app"><!---->
     <div data-v-69bc82eb="" class="wrap wrap">
-        <div data-v-d765d8a4="" data-v-69bc82eb="" class="banner"><a data-v-d765d8a4="" href="#/"
-                                                                     class="logo router-link-active"><img
-                data-v-d765d8a4="" width="120" height="72" alt="Hi! NKMUN." src="/static/hilogo.png"></a> <a
-                data-v-d765d8a4="" href="https://nkmun.cn/" class="logo"><img data-v-d765d8a4="" width="122" height="72"
-                                                                              alt="NKMUN" src="/static/nklogo.png"></a>
-        </div> <!----> <!---->
+        <div data-v-d765d8a4="" data-v-765bd194="" class="banner">
+
+                <img data-v-d765d8a4="" width="100" height="100" alt="NKMUN" src="/static/img/nklogo.png">
+
+        </div>
         <div data-v-69bc82eb="" class="application"><h2 data-v-69bc82eb="">个人代表报名</h2>
             <div data-v-69bc82eb="" class="disclaimer"><p>
-                欢迎报名参与2021汇文国际模拟联合国大会，您正在填写的是参与本次大会所需要的基本信息与学术测试，在您开始填写前，请仔细阅读以下注意事项：</p>
+                欢迎报名参与2021WESMUN模拟联合国大会，您正在填写的是参与本次大会所需要的基本信息，在您开始填写前，请仔细阅读以下注意事项：</p>
                 <p>1、本届会议接受全国（含港澳台）各高中及大学生模联社团以团体名义报名参会。请由代表团领队亲自填写本申请，并请确认所填写内容真实有效，以确保后续的参会权益。</p>
-                <p>2、本次大会的报名截止时间为北京时间2020年10月7日（含），请务必准时提交。</p>
-                <p>3、代表团报名时所需的第一联系人信息，建议填写代表团领队信息；第二联系人信息建议填写社团负责人，或其他能够保持通讯畅通的代表团成员信息。</p>
-                <p>4、若您在填写过程中有任何问题，请与大会公关部分管公关（名单参见一轮通告）取得联系，或者致信staff@nkmun.cn，我们非常乐意为您解答。</p>
-                <p><b>获得协办单位称号的学校不需要填答学测题目。</b></p></div>
+
+                <p>2、代表团报名时所需的第一联系人信息，建议填写代表团领队信息；第二联系人信息建议填写社团负责人，或其他能够保持通讯畅通的代表团成员信息。</p>
+                <p>3、若您在填写过程中有任何问题，请与大会公关部分管公关（名单参见一轮通告）取得联系，或者致信wescorn@126.com，我们非常乐意为您解答。</p>
+                </div>
             <form action="/get_data/" method="post">
                 {% csrf_token %}
                 <div data-v-49650838="" data-v-69bc82eb="" class="application-form">
@@ -1059,42 +1031,12 @@
 
         </div>
     </div>
-    <div data-v-328c2657="" data-v-69bc82eb="" class="copyright"><pre data-v-328c2657="">Copyright ©2011-2019
-Nanjing Miguo Culture Media co., LTD, All Rights Reserved
-南京米果文化传媒有限公司 版权所有 <a data-v-328c2657="" href="http://www.beian.miit.gov.cn">苏ICP备15062651号</a></pre>
-    </div>
+
 </div>
 </div>
 <script type="text/javascript" src="/static/js/manifest.7868b9c.js"></script>
 <script type="text/javascript" src="/static/js/vendor.13ffffe.js"></script>
 <script type="text/javascript" src="/static/js/app.87947b1.js"></script>
-<div tabindex="-1" role="dialog" aria-modal="true" aria-label="报名成功" class="el-message-box__wrapper"
-     style="z-index: 2004; display: none;">
-    <div class="el-message-box">
-        <div class="el-message-box__header">
-            <div class="el-message-box__title"><!----><span>报名成功</span></div>
-            <button type="button" aria-label="Close" class="el-message-box__headerbtn"><i
-                    class="el-message-box__close el-icon-close"></i></button>
-        </div>
-        <div class="el-message-box__content" id="abId0.5084855164353237">
-            <div class="el-message-box__container">
-                <div class="el-message-box__status el-icon-success"></div>
-                <div class="el-message-box__message"><p>报名成功，请等待组委通知。</p></div>
-            </div>
-            <div class="el-message-box__input" style="display: none;" id="abId0.7890232556588745">
-                <div class="el-input" id="abId0.8754164777643132" abineguid="BBCB2E8EB2E5423C807276807172FC75">
-                    <!----><input type="text" autocomplete="off" placeholder="" class="el-input__inner"><!----><!---->
-                    <!----><!----></div>
-                <div class="el-message-box__errormsg" style="visibility: hidden;"></div>
-            </div>
-        </div>
-        <div class="el-message-box__btns"><!---->
-            <button type="button" class="el-button el-button--default el-button--small el-button--primary "><!---->
-                <!----><span>
-          OK
-        </span></button>
-        </div>
-    </div>
-</div>
+
 </body>
 </html>

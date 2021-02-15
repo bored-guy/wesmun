@@ -116,9 +116,11 @@ def team(request):
     peoples = "/people?identify_code=" + identify_code
     information = "/information?identify_code=" + identify_code
     back_url = "/get_data_index?identify_code=" + identify_code
+    money_url = "/money?identify_code=" + identify_code
     data = {
         'peoples': json.dumps(peoples),
         'information': json.dumps(information),
+        'money':json.dumps(money_url),
         'back_url':json.dumps(back_url)
     }
     return render(request, 'team.html', data)

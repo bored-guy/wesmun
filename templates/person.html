@@ -4,35 +4,8 @@
     <meta charset="utf-8">
     <link rel="icon" href="/static/img/favicon.png">
     <link rel="apple-touch-icon" href="/static/img/favicon.png">
-    <title>Hi汇文</title>
-    <script>;(function () {
-        // detect browser version, redirect if found an unhealthy version
-        if (window.navigator) {
-            var ua = String(window.navigator.userAgent)
-            var chrome = /(?:Chrome|CriOS)\/(\d+)\./.exec(ua)
-            var safari = /Safari/.exec(ua) ? /Version\/(\d+)\./.exec(ua) : null
-            var firefox = /Firefox\/(\d+)\./.exec(ua)
-            var edge = /Edge\/(\d+)\./.exec(ua)
-            var appleWebkit = /AppleWebKit\/(\d+)\./.exec(ua)
+    <title>Hi WESMUN</title>
 
-            function isAcceptable() {
-                return (
-                    (chrome && Number(chrome[1]) >= 56)
-                    || (safari && Number(safari[1]) >= 10)
-                    || (firefox && Number(firefox[1]) >= 50)
-                    || (edge && Number(edge[1]) >= 13)
-                    || (appleWebkit && Number(appleWebkit[1]) >= 602)
-                )
-            }
-
-            if (!isAcceptable()) {
-                window.location.href = "/static/browser-warning.html"
-            }
-        } else {
-            // must be really ancient one
-            document.write('<div><h1>请使用最新版Chrome访问</h1><a href="https://www.google.cn/chrome/">下载链接1</a> <a href="http://rj.baidu.com/soft/detail/25718.html">下载链接2</a></div>')
-        }
-    })();</script>
     <link href="/static/css/app.b840a141264236e846d5f4d66751a3d1.css" rel="stylesheet">
     <style type="text/css">/*for=vue-advanced-cropper*/
     .vue-advanced-cropper {
@@ -760,11 +733,10 @@
 <body class="">
 <div id="app"><!---->
     <div data-v-f8ca222e="" class="wrap wrap">
-        <div data-v-d765d8a4="" data-v-f8ca222e="" class="banner"><a data-v-d765d8a4="" href="#/"
-                                                                     class="logo router-link-active"><img
-                data-v-d765d8a4="" width="120" height="72" alt="Hi! NKMUN." src="/static/img/hilogo.png"></a> <a
-                data-v-d765d8a4="" href="https://nkmun.cn/" class="logo"><img data-v-d765d8a4="" width="122" height="72"
-                                                                              alt="NKMUN" src="/static/img/nklogo.png"></a>
+        <div data-v-d765d8a4="" data-v-765bd194="" class="banner">
+
+                <img data-v-d765d8a4="" width="100" height="100" alt="NKMUN" src="/static/img/nklogo.png">
+
         </div>
         <h2 data-v-f8ca222e="">欢迎报名WesMun</h2>
         <div data-v-f8ca222e="" class="apply-options">
@@ -781,10 +753,7 @@
             <button data-v-f8ca222e="" type="button" class="el-button el-button--primary el-button--large" onclick='window.location.href={{back_url|safe}}'><!----><i
                     class="el-icon-arrow-left"></i><span>返回</span></button>
         </div>
-        <div data-v-328c2657="" data-v-f8ca222e="" class="copyright"><pre data-v-328c2657="">Copyright ©2011-2019
-Nanjing Miguo Culture Media co., LTD, All Rights Reserved
-南京米果文化传媒有限公司 版权所有 <a data-v-328c2657="" href="http://www.beian.miit.gov.cn">苏ICP备15062651号</a></pre>
-        </div>
+
     </div>
 </div>
 <script type="text/javascript" src="/static/js/manifest.7868b9c.js"></script>
