@@ -877,7 +877,7 @@
     <div data-v-69bc82eb="" class="wrap wrap">
         <div data-v-d765d8a4="" data-v-765bd194="" class="banner">
 
-                <img data-v-d765d8a4="" width="100" height="100" alt="NKMUN" src="/static/img/nklogo.png">
+            <img data-v-d765d8a4="" width="100" height="100" alt="NKMUN" src="/static/img/nklogo.png">
 
         </div>
         <div data-v-69bc82eb="" class="application"><h2 data-v-69bc82eb="">填写团队成员信息({{finished}}/{{all}})</h2>
@@ -887,7 +887,7 @@
 
                 <p>2、代表团报名时所需的第一联系人信息，建议填写代表团领队信息；第二联系人信息建议填写社团负责人，或其他能够保持通讯畅通的代表团成员信息。</p>
                 <p>3、若您在填写过程中有任何问题，请与大会公关部分管公关（名单参见一轮通告）取得联系，或者致信wescorn@126.com，我们非常乐意为您解答。</p>
-                </div>
+            </div>
             <form action="/information/" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div data-v-49650838="" data-v-69bc82eb="" class="application-form">
@@ -903,7 +903,7 @@
                         </div>
                         <div class="el-form-item is-required">
                             <label for="gender" class="el-form-item__label"
-                                                                     style="width: 96px;">性别</label>
+                                   style="width: 96px;">性别</label>
                             <div class="el-form-item__content" style="margin-left: 96px;">
                                 <div role="radiogroup" class="el-radio-group">
                                     <label role="radio" tabindex="0" class="el-radio">
@@ -959,25 +959,20 @@
                                     data-v-7adfb3a0="">会场：</span>
                                 <select name="place">
                                     <option value="" disabled selected hidden>请选择会场</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
+                                    <option value="1">安全理事会</option>
+                                    <option value="2">世界卫生组织</option>
+                                    <option value="3">历史委员会</option>
+                                    <option value="4">特殊委员会：哈利波特联动委员会</option>
+                                    <option value="5">特殊委员会：1956西迁</option>
+                                    <option value="6">经社理事会</option>
+                                    <option value="7">主新闻中心</option>
                                 </select>
 
                             </div>
                         </div>
                         <div class="el-form-item is-required">
                             <label for="gender" class="el-form-item__label"
-                                                                     style="width: 96px;">是否住宿</label>
+                                   style="width: 96px;">是否住宿</label>
                             <div class="el-form-item__content" style="margin-left: 96px;">
                                 <div role="radiogroup" class="el-radio-group">
                                     <label role="radio" tabindex="0" class="el-radio">
@@ -995,30 +990,29 @@
                         </div>
                     </div>
                     <div data-v-49650838="" class="section disclaimer"><h4 data-v-49650838="">权责声明</h4>
-                    <p data-v-49650838="" style="text-align: center; margin: 1em 0px;"><a data-v-49650838=""
-                                                                                          href="https://nkmun.cn/file/NKMUNC-%E6%9D%83%E8%B4%A3%E5%A3%B0%E6%98%8E.pdf"
-                                                                                          target="_blank"
-                                                                                          download="NKMUNC-权责声明.pdf">权责声明下载</a>
-                    </p>
-                    <p data-v-49650838="" style="text-align: center; margin: 1em 0px;">
-                        请完整打印权责声明书并与监护人详阅，在最后一页完成签字并拍照上传该页，照片要求字迹清晰。</p>
+                        <p data-v-49650838="" style="text-align: center; margin: 1em 0px;"><a data-v-49650838=""
+                                                                                              href="https://nkmun.cn/file/NKMUNC-%E6%9D%83%E8%B4%A3%E5%A3%B0%E6%98%8E.pdf"
+                                                                                              target="_blank"
+                                                                                              download="NKMUNC-权责声明.pdf">权责声明下载</a>
+                        </p>
+                        <p data-v-49650838="" style="text-align: center; margin: 1em 0px;">
+                            请完整打印权责声明书并与监护人详阅，在最后一页完成签字并拍照上传该页，照片要求字迹清晰。</p>
 
 
-                    <div style="text-align: center;">
-                        <p>点击以选择图片，或将图片拖至此处</p>
-                            <!----><input type="file" name="file" accept="image/jpeg, image/png" >
+                        <div style="text-align: center;">
+                            <p>点击以选择图片，或将图片拖至此处</p>
+                            <!----><input type="file" name="file" accept="image/jpeg, image/png">
 
-</div>
-
-
+                        </div>
 
 
-        </div>
+                    </div>
 
-
-                    <button data-v-69bc82eb="" type="submit"
-                            class="el-button btn submit el-button--success el-button--large">
-                        <!----><!----><span> 提交 </span></button>
+                    <div style="text-align: center !important;">
+                        <button data-v-69bc82eb="" type="submit"
+                                class="el-button btn submit el-button--success el-button--large">
+                            <!----><!----><span> 提交 </span></button>
+                    </div>
             </form>
 
         </div>

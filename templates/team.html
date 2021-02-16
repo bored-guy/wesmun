@@ -5,34 +5,7 @@
     <link rel="icon" href="/static/img/favicon.png">
     <link rel="apple-touch-icon" href="/static/img/favicon.png">
     <title>Hi WESMUN</title>
-    <script>;(function () {
-        // detect browser version, redirect if found an unhealthy version
-        if (window.navigator) {
-            var ua = String(window.navigator.userAgent)
-            var chrome = /(?:Chrome|CriOS)\/(\d+)\./.exec(ua)
-            var safari = /Safari/.exec(ua) ? /Version\/(\d+)\./.exec(ua) : null
-            var firefox = /Firefox\/(\d+)\./.exec(ua)
-            var edge = /Edge\/(\d+)\./.exec(ua)
-            var appleWebkit = /AppleWebKit\/(\d+)\./.exec(ua)
 
-            function isAcceptable() {
-                return (
-                    (chrome && Number(chrome[1]) >= 56)
-                    || (safari && Number(safari[1]) >= 10)
-                    || (firefox && Number(firefox[1]) >= 50)
-                    || (edge && Number(edge[1]) >= 13)
-                    || (appleWebkit && Number(appleWebkit[1]) >= 602)
-                )
-            }
-
-            if (!isAcceptable()) {
-                window.location.href = "/static/browser-warning.html"
-            }
-        } else {
-            // must be really ancient one
-            document.write('<div><h1>请使用最新版Chrome访问</h1><a href="https://www.google.cn/chrome/">下载链接1</a> <a href="http://rj.baidu.com/soft/detail/25718.html">下载链接2</a></div>')
-        }
-    })();</script>
     <link href="/static/css/app.b840a141264236e846d5f4d66751a3d1.css" rel="stylesheet">
     <style type="text/css">/*for=vue-advanced-cropper*/
     .vue-advanced-cropper {
